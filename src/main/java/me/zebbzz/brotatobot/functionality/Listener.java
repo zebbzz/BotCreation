@@ -44,6 +44,8 @@ public class Listener extends ListenerAdapter {
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
 
+        Channel channel = event.getChannel();
+
         if (event.getMessage().getContentRaw().equalsIgnoreCase(Constants.PREFIX + "shutdown") &&
                 event.getAuthor().getIdLong() == Constants.OWNER) {
             shutdown(event.getJDA());

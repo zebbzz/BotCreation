@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface ICommand {
     void handle(List<String> args, GuildMessageReceivedEvent event);
+
     String getHelp();
 
     String getInvoke();

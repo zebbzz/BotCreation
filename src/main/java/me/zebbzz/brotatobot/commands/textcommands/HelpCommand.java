@@ -1,18 +1,16 @@
 package me.zebbzz.brotatobot.commands.textcommands;
 
+import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.zebbzz.brotatobot.functionality.CommandManager;
 import me.zebbzz.brotatobot.functionality.Constants;
 import me.zebbzz.brotatobot.objects.ICommand;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
-import java.awt.*;
 import java.util.List;
-import java.util.Random;
 
 public class HelpCommand implements ICommand {
 
-    private final Random random = new Random();
     private final CommandManager manager;
 
     public HelpCommand(CommandManager manager) {
@@ -44,8 +42,7 @@ public class HelpCommand implements ICommand {
 
     private void generateAndSendEmbed(GuildMessageReceivedEvent event) {
 
-        EmbedBuilder builder = new EmbedBuilder()
-                .setTitle("A list of all my commands:").setColor(getRandomColor());
+        EmbedBuilder builder = EmbedUtils.defaultEmbed().setTitle("A list of all my commands:");
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
@@ -57,13 +54,6 @@ public class HelpCommand implements ICommand {
         event.getChannel().sendMessage(builder.build()).queue();
     }
 
-    private Color getRandomColor() {
-        float r = random.nextFloat();
-        float g = random.nextFloat();
-        float b = random.nextFloat();
-
-        return new Color(r, g, b);
-    }
 
     @Override
     public String getHelp() {

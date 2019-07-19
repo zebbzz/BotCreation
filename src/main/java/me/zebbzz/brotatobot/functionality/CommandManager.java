@@ -1,5 +1,7 @@
 package me.zebbzz.brotatobot.functionality;
 
+import me.zebbzz.brotatobot.commands.memecommands.CatCommand;
+import me.zebbzz.brotatobot.commands.moderation.TagFreeCommand;
 import me.zebbzz.brotatobot.commands.textcommands.CrapsCommand;
 import me.zebbzz.brotatobot.commands.textcommands.HelpCommand;
 import me.zebbzz.brotatobot.commands.textcommands.PingCommand;
@@ -15,13 +17,15 @@ public class CommandManager {
 
     private final Map<String, ICommand> commands = new HashMap<>();
 
-    //Using the CommandManager class allows new commands to be built without being used until complete.
+
 
     public CommandManager() {
         addCommand(new PingCommand());
         addCommand(new KickCommand());
         addCommand(new CrapsCommand());
         addCommand(new HelpCommand(this));
+        addCommand(new CatCommand());
+        addCommand(new TagFreeCommand());
     }
 
     private void addCommand(ICommand command) {
