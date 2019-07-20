@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763db75b-511e-48d9-bebc-840288357da8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/TagFreeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/objects/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/objects/ICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/Java.brotatobot.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/CommandsManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/memecommands/CatCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/moderation/BanCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/moderation/KickCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/moderation/TagFreeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/moderation/UnBanCommand$BanCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/moderation/UnBanCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/textcommands/CrapsCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/textcommands/HelpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/commands/textcommands/PingCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/functionality/CommandManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/functionality/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/functionality/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/functionality/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/functionality/hosting/Secrets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/objects/ICommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/me/zebbzz/brotatobot/objects/ICommands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/logback.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,6 +42,10 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -48,112 +72,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Listener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-              <folding>
-                <element signature="imports" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/HelpCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="42" column="71" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
-              <folding>
-                <element signature="imports" />
-                <element signature="method#HelpCommand#0;class#HelpCommand#0" />
-                <element signature="method#handle#0;class#HelpCommand#0" />
-                <element signature="e#705#777#1" />
-                <element signature="e#912#1136#1" />
-                <element signature="method#generateAndSendEmbed#0;class#HelpCommand#0" />
-                <element signature="method#getHelp#0;class#HelpCommand#0" />
-                <element signature="method#getInvoke#0;class#HelpCommand#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="192">
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/hosting/Secrets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <element signature="imports" />
-                <element signature="method#Main#0;class#Main#0" />
-                <element signature="e#1847#1891#0" />
-                <element signature="method#getRandomColor#0;class#Main#0" />
-                <element signature="method#main#0;class#Main#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/TagFreeCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-              <folding>
-                <element signature="method#handle#0;class#TagFreeCommand#0" />
-                <element signature="method#getHelp#0;class#TagFreeCommand#0" />
-                <element signature="method#getInvoke#0;class#TagFreeCommand#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="method#handle#0;class#CatCommand#0" />
-                <element signature="e#499#573#0" />
-                <element signature="method#getHelp#0;class#CatCommand#0" />
-                <element signature="method#getInvoke#0;class#CatCommand#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/objects/ICommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/CommandManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="method#addCommand#0;class#CommandManager#0" />
-                <element signature="e#1227#1294#1" />
-                <element signature="method#getCommands#0;class#CommandManager#0" />
-                <element signature="method#getCommand#0;class#CommandManager#0" />
-                <element signature="method#handleCommand#0;class#CommandManager#0" />
-                <element signature="e#1800#1951#1" />
-              </folding>
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -196,20 +127,21 @@
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/UnBanCommand.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/HelpCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/TagFreeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Listener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/CommandManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/objects/ICommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/PingCommand.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-17" />
-    <option name="y" value="-17" />
-    <option name="width" value="2524" />
-    <option name="height" value="1375" />
+    <option name="x" value="-18" />
+    <option name="y" value="-18" />
+    <option name="width" value="2526" />
+    <option name="height" value="1377" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,38 +155,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="brotatobot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -262,8 +194,8 @@
               <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -272,28 +204,8 @@
               <item name="memecommands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="brotatobot" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="moderation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="brotatobot" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="textcommands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -301,8 +213,18 @@
               <item name="functionality" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brotatobot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brotatobot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brotatobot" type="462c0819:PsiDirectoryNode" />
+              <item name="functionality" type="462c0819:PsiDirectoryNode" />
+              <item name="hosting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BotCreation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BotCreation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -316,6 +238,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563521660315" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -405,7 +328,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -413,7 +336,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21375267" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22213182" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.4305949" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32827735" />
@@ -540,31 +463,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/.editorconfig" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/PingCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/KickCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/CrapsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -575,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/BanCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -589,12 +485,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/TagFreeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
+          <folding>
+            <element signature="method#handle#0;class#TagFreeCommand#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="57" lean-forward="true" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/objects/ICommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+        <state relative-caret-position="96">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
-            <element signature="imports" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#1847#1891#0" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,90 +537,58 @@
         <state relative-caret-position="221">
           <caret line="42" column="71" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
           <folding>
-            <element signature="imports" />
-            <element signature="method#HelpCommand#0;class#HelpCommand#0" />
             <element signature="method#handle#0;class#HelpCommand#0" />
             <element signature="e#705#777#1" />
             <element signature="e#912#1136#1" />
             <element signature="method#generateAndSendEmbed#0;class#HelpCommand#0" />
             <element signature="method#getHelp#0;class#HelpCommand#0" />
-            <element signature="method#getInvoke#0;class#HelpCommand#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/TagFreeCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/moderation/BanCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-          <folding>
-            <element signature="method#handle#0;class#TagFreeCommand#0" />
-            <element signature="method#getHelp#0;class#TagFreeCommand#0" />
-            <element signature="method#getInvoke#0;class#TagFreeCommand#0" />
-          </folding>
+        <state relative-caret-position="744">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="289">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="method#addCommand#0;class#CommandManager#0" />
-            <element signature="e#1227#1294#1" />
-            <element signature="method#getCommands#0;class#CommandManager#0" />
-            <element signature="method#getCommand#0;class#CommandManager#0" />
             <element signature="method#handleCommand#0;class#CommandManager#0" />
-            <element signature="e#1800#1951#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/PingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="200">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/hosting/Secrets.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/textcommands/CrapsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="72">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/commands/memecommands/CatCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="method#handle#0;class#CatCommand#0" />
-            <element signature="e#499#573#0" />
-            <element signature="method#getHelp#0;class#CatCommand#0" />
-            <element signature="method#getInvoke#0;class#CatCommand#0" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/objects/ICommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/hosting/Secrets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/zebbzz/brotatobot/functionality/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" />
-            <element signature="method#Main#0;class#Main#0" />
-            <element signature="e#1847#1891#0" />
-            <element signature="method#getRandomColor#0;class#Main#0" />
-            <element signature="method#main#0;class#Main#0" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -750,6 +651,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
