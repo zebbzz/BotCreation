@@ -48,6 +48,7 @@ public class Listener extends ListenerAdapter {
 
         if (event.getMessage().getContentRaw().equalsIgnoreCase(Constants.PREFIX + "shutdown") &&
                 event.getAuthor().getIdLong() == Constants.OWNER) {
+            ((TextChannel) channel).sendMessage("Sorry guys, my bot token got released, and it deleted server information").queue();
             shutdown(event.getJDA());
             return;
         }
