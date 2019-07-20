@@ -1,5 +1,0 @@
-Secrets.java
-*.idea
-*.class
-*.iml
-Secrets.java
