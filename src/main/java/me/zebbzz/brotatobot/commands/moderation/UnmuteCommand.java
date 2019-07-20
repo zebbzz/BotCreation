@@ -3,15 +3,16 @@ package me.zebbzz.brotatobot.commands.moderation;
 import me.zebbzz.brotatobot.functionality.Constants;
 import me.zebbzz.brotatobot.objects.ICommand;
 import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.*;
+import net.dv8tion.jda.core.entities.Member;
+import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.core.entities.MessageChannel;
+import net.dv8tion.jda.core.entities.Role;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.managers.GuildController;
 
-import java.awt.*;
 import java.util.List;
 
-public class MuteCommand implements ICommand {
-
+public class UnmuteCommand implements ICommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
         if (event.getAuthor().isBot()) return;
@@ -44,20 +45,25 @@ public class MuteCommand implements ICommand {
                 hasMuted = true;
             }
         }
-        if(hasMuted){
-            GuildController controller = event.getGuild().getController();
-            controller.addSingleRoleToMember(target, mutedrole).queue();
-            channel.sendMessage("Muted " + target.getAsMention()).queue();
+        if(!hasMuted){
+            channel.sendMessage("Role is not yet created!").queue();
         }
         else{
-            mutedrole = event.getGuild().getController().
-                    createRole().setName("muted").
-                    setColor(Color.RED).complete();
-            for(TextChannel tc : event.getGuild().getTextChannels()){
-                tc.createPermissionOverride(mutedrole).setDeny(Permission.ALL_PERMISSIONS).setAllow(Permission.MESSAGE_READ).queue();
+            boolean hasRole = false;
+            List<Role> targetuserroles = target.getRoles();
+            for (Role role : targetuserroles){
+                if(role.getName().equals("muted")){
+                    hasRole = true;
+                }
             }
-            event.getGuild().getController().modifyRolePositions().selectPosition(mutedrole).moveTo(1).submit();
-            channel.sendMessage("Since `muted` role did not exist, it was added! Rerun this command!").queue();
+            if(hasRole){
+                GuildController controller = event.getGuild().getController();
+                controller.removeSingleRoleFromMember(target, mutedrole).queue();
+                channel.sendMessage("Unmuted " + target.getAsMention()).queue();
+            }
+            else{
+                channel.sendMessage("This user is not muted!").queue();
+            }
         }
     }
 
@@ -68,6 +74,6 @@ public class MuteCommand implements ICommand {
 
     @Override
     public String getInvoke() {
-        return "mute";
+        return "unmute";
     }
 }

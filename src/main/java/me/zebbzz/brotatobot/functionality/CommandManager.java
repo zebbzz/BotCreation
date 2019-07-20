@@ -3,6 +3,7 @@ package me.zebbzz.brotatobot.functionality;
 import me.zebbzz.brotatobot.commands.memecommands.CatCommand;
 import me.zebbzz.brotatobot.commands.moderation.MuteCommand;
 import me.zebbzz.brotatobot.commands.moderation.TagFreeCommand;
+import me.zebbzz.brotatobot.commands.moderation.UnmuteCommand;
 import me.zebbzz.brotatobot.commands.textcommands.CrapsCommand;
 import me.zebbzz.brotatobot.commands.textcommands.HelpCommand;
 import me.zebbzz.brotatobot.commands.textcommands.PingCommand;
@@ -28,6 +29,7 @@ public class CommandManager {
         addCommand(new CatCommand());
         addCommand(new TagFreeCommand());
         addCommand(new MuteCommand());
+        addCommand(new UnmuteCommand());
     }
 
     private void addCommand(ICommand command) {
