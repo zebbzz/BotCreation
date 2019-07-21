@@ -1,7 +1,7 @@
-package me.zebbzz.brotatobot.commands.moderation;
+package brotatobot.commands.moderation;
 
-import me.zebbzz.brotatobot.functionality.Constants;
-import me.zebbzz.brotatobot.objects.ICommand;
+import brotatobot.objects.ICommand;
+import brotatobot.functionality.Constants;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
@@ -21,14 +21,14 @@ public class MuteCommand implements ICommand {
         MessageChannel channel = event.getChannel();
         Member selfMember = event.getGuild().getSelfMember();
         List<Member> mentionedMembers = event.getMessage().getMentionedMembers();
-        if(content.charAt(0) != Constants.PREFIX.charAt(0)) return;
+        if (content.charAt(0) != Constants.PREFIX.charAt(0)) return;
 
         if (args.isEmpty() || mentionedMembers.isEmpty()) {
             channel.sendMessage("Missing arguments").queue();
             return;
         }
         Member target = mentionedMembers.get(0);
-        if (!member.hasPermission(Permission.KICK_MEMBERS)){
+        if (!member.hasPermission(Permission.KICK_MEMBERS)) {
             channel.sendMessage("You do not have permissions!").queue();
             return;
         }
@@ -39,22 +39,21 @@ public class MuteCommand implements ICommand {
         List<Role> roles = event.getGuild().getRoles();
         Role mutedrole = null;
         boolean hasMuted = false;
-        for (Role r : roles){
-            if(r.getName().equals("muted")){
+        for (Role r : roles) {
+            if (r.getName().equals("muted")) {
                 hasMuted = true;
             }
         }
-        if(hasMuted){
+        if (hasMuted) {
             List<Role> m = event.getGuild().getRolesByName("muted", false);
             GuildController controller = event.getGuild().getController();
             controller.addSingleRoleToMember(target, m.get(0)).queue();
             channel.sendMessage("Muted " + target.getAsMention()).queue();
-        }
-        else{
+        } else {
             mutedrole = event.getGuild().getController().
                     createRole().setName("muted").
                     setColor(Color.RED).complete();
-            for(TextChannel tc : event.getGuild().getTextChannels()){
+            for (TextChannel tc : event.getGuild().getTextChannels()) {
                 tc.createPermissionOverride(mutedrole).setDeny(Permission.MESSAGE_WRITE, Permission.MESSAGE_ADD_REACTION).queue();
             }
             event.getGuild().getController().modifyRolePositions().selectPosition(mutedrole).moveTo(1);

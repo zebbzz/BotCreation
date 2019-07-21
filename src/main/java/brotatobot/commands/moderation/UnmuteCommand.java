@@ -1,7 +1,7 @@
 package me.zebbzz.brotatobot.commands.moderation;
 
-import me.zebbzz.brotatobot.functionality.Constants;
-import me.zebbzz.brotatobot.objects.ICommand;
+import brotatobot.functionality.Constants;
+import brotatobot.objects.ICommand;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.Message;
@@ -11,6 +11,7 @@ import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.managers.GuildController;
 
 import java.util.List;
+
 
 public class UnmuteCommand implements ICommand {
     @Override
