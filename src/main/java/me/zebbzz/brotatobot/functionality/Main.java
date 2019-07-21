@@ -32,7 +32,7 @@ public class Main {
         EmbedUtils.setEmbedBuilder(
                 () -> new EmbedBuilder()
                         .setColor(getRandomColor())
-                        .setFooter("Developed by Zebbzz", "https://discord.gg/CXksb8u")
+                        .setFooter("Developed by Zebbzz and FeedMeAPIs", "https://discord.gg/CXksb8u")
                         .setTimestamp(Instant.now())
         );
 
