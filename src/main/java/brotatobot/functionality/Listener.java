@@ -3,11 +3,14 @@ package brotatobot.functionality;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.ReadyEvent;
+import net.dv8tion.jda.core.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 public class Listener extends ListenerAdapter {
 
@@ -39,6 +42,12 @@ public class Listener extends ListenerAdapter {
         } else if (event.isFromType(ChannelType.PRIVATE)) {
             logger.info(String.format("[PRIVATE]<%#s>: %s", author, content));
         }
+    }
+    @Override
+    public void onGuildMemberJoin(GuildMemberJoinEvent e){
+        List<TextChannel> ch = e.getGuild().getTextChannelsByName("general", false);
+        TextChannel chToSend = ch.get(0);
+        chToSend.sendMessage("Welcome to our server " + e.getMember().getAsMention()).queue();
     }
 
     @Override

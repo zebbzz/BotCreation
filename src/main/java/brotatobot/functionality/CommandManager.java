@@ -1,17 +1,17 @@
-package brotatobot.functionality;
-
+import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.moderation.KickCommand;
 import brotatobot.commands.moderation.TagFreeCommand;
-import brotatobot.commands.textcommands.HelpCommand;
-import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.textcommands.CrapsCommand;
+import brotatobot.commands.textcommands.HelpCommand;
 import brotatobot.commands.textcommands.PingCommand;
+import brotatobot.functionality.Constants;
 import brotatobot.objects.ICommand;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 import java.util.regex.Pattern;
+
 
 public class CommandManager {
 
@@ -26,6 +26,8 @@ public class CommandManager {
         addCommand(new HelpCommand(this));
         addCommand(new CatCommand());
         addCommand(new TagFreeCommand());
+//        addCommand(new MuteCommand());
+//        addCommand(new UnmuteCommand());
     }
 
     private void addCommand(ICommand command) {
