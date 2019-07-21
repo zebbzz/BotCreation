@@ -57,8 +57,9 @@ public class UnmuteCommand implements ICommand {
                 }
             }
             if(hasRole){
+                List<Role> m = event.getGuild().getRolesByName("muted", false);
                 GuildController controller = event.getGuild().getController();
-                controller.removeSingleRoleFromMember(target, mutedrole).queue();
+                controller.removeSingleRoleFromMember(target, m.get(0)).queue();
                 channel.sendMessage("Unmuted " + target.getAsMention()).queue();
             }
             else{

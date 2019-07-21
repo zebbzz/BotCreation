@@ -45,8 +45,9 @@ public class MuteCommand implements ICommand {
             }
         }
         if(hasMuted){
+            List<Role> m = event.getGuild().getRolesByName("muted", false);
             GuildController controller = event.getGuild().getController();
-            controller.addSingleRoleToMember(target, mutedrole).queue();
+            controller.addSingleRoleToMember(target, m.get(0)).queue();
             channel.sendMessage("Muted " + target.getAsMention()).queue();
         }
         else{
@@ -54,10 +55,10 @@ public class MuteCommand implements ICommand {
                     createRole().setName("muted").
                     setColor(Color.RED).complete();
             for(TextChannel tc : event.getGuild().getTextChannels()){
-                tc.createPermissionOverride(mutedrole).setDeny(Permission.ALL_PERMISSIONS).setAllow(Permission.MESSAGE_READ).queue();
+                tc.createPermissionOverride(mutedrole).setDeny(Permission.MESSAGE_WRITE, Permission.MESSAGE_ADD_REACTION).queue();
             }
-            event.getGuild().getController().modifyRolePositions().selectPosition(mutedrole).moveTo(1).submit();
-            channel.sendMessage("Since `muted` role did not exist, it was added! Rerun this command!").queue();
+            event.getGuild().getController().modifyRolePositions().selectPosition(mutedrole).moveTo(1);
+            channel.sendMessage("Since `muted` role did not exist, it was added! Rerun this command! (This should only happen once)").queue();
         }
     }
 
