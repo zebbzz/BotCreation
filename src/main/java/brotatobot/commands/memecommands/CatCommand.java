@@ -28,6 +28,8 @@ public class CatCommand implements ICommand {
                 return;
             }
 
+
+
             event.getChannel().sendMessage(embed).queue();
         });
 

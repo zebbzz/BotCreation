@@ -18,6 +18,7 @@ dependencies {
     compile group: 'net.dv8tion', name: 'JDA', version: '3.8.3_464'
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
     implementation group: 'me.duncte123', name: 'botCommons', version: '1.0.31'
+    implementation group: 'org.reflections', name: 'reflections', version: '0.9.11'
 }
 
 compileJava.options.encoding = 'UTF-8'

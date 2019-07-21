@@ -11,6 +11,7 @@ import brotatobot.objects.ICommand;
 import me.zebbzz.brotatobot.commands.moderation.UnmuteCommand;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
+import org.reflections.Reflections;
 
 import java.util.*;
 import java.util.regex.Pattern;
@@ -20,6 +21,7 @@ public class CommandManager {
 
     private final Map<String, ICommand> commands = new HashMap<>();
 
+    registerCommandsFromReflection(new Reflections("brotatobot.commands"));
 
 
     public CommandManager() {
