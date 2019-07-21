@@ -28,11 +28,15 @@ public class MuteCommand implements ICommand {
             return;
         }
         Member target = mentionedMembers.get(0);
-        if (!member.hasPermission(Permission.KICK_MEMBERS)){
+        if (!member.hasPermission(Permission.MANAGE_ROLES)){
             channel.sendMessage("You do not have permissions!").queue();
             return;
         }
-        if (!selfMember.hasPermission(Permission.KICK_MEMBERS) && !selfMember.canInteract(target)) {
+        if (target.hasPermission(Permission.MANAGE_ROLES)) {
+            channel.sendMessage("Can't kick an admin!").queue();
+            return;
+        }
+        if (!selfMember.hasPermission(Permission.MANAGE_ROLES) && !selfMember.canInteract(target)) {
             channel.sendMessage("I can't kick that user or I don't have the kick members permission.").queue();
             return;
         }
