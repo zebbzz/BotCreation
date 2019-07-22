@@ -1,8 +1,10 @@
 package brotatobot.functionality;
 
 import net.dv8tion.jda.core.JDA;
+import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.ReadyEvent;
+import net.dv8tion.jda.core.events.channel.text.TextChannelCreateEvent;
 import net.dv8tion.jda.core.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
@@ -48,6 +50,12 @@ public class Listener extends ListenerAdapter {
         List<TextChannel> ch = e.getGuild().getTextChannelsByName("general", false);
         TextChannel chToSend = ch.get(0);
         chToSend.sendMessage("Welcome to our server " + e.getMember().getAsMention()).queue();
+    }
+
+    @Override
+    public void onTextChannelCreate(TextChannelCreateEvent e){
+        List<Role> mutedrole = e.getGuild().getRolesByName("muted", false);
+        e.getChannel().createPermissionOverride(mutedrole.get(0)).setDeny(Permission.MESSAGE_WRITE, Permission.MESSAGE_ADD_REACTION).queue();
     }
 
     @Override
