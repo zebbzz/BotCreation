@@ -1,5 +1,8 @@
 package brotatobot.functionality;
 
+import brotatobot.commands.admin.SetPrefixCommand;
+import brotatobot.commands.audiocommands.JoinCommand;
+import brotatobot.commands.audiocommands.LeaveCommand;
 import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.memecommands.DogCommand;
 import brotatobot.commands.memecommands.MemeCommand;
@@ -24,19 +27,25 @@ public class CommandManager {
 
 
     public CommandManager(Random random) {
-        addCommand(new PingCommand());
-        addCommand(new KickCommand());
-        addCommand(new CrapsCommand());
+        /** Text and Embed Commands */
+        addCommand(new PingCommand()); //Check bots latency
+        addCommand(new KickCommand()); //Kick user from the server
+        addCommand(new CrapsCommand()); //Play craps [in production]
         addCommand(new HelpCommand(this));
-        addCommand(new CatCommand());
-        addCommand(new TagFreeCommand());
-        addCommand(new MuteCommand());
-        addCommand(new UnmuteCommand());
-        addCommand(new DogCommand());
-        addCommand(new MemeCommand(random));
-        addCommand(new UICommand());
-        addCommand(new BanCommand());
-        addCommand(new UnBanCommand());
+        addCommand(new CatCommand()); //Random Cat Images
+        addCommand(new TagFreeCommand()); //Tag a help server as free, in production
+        addCommand(new MuteCommand()); //Mute user [adds role if non-existent]
+        addCommand(new UnmuteCommand()); //Unmute user [removes role]
+        addCommand(new DogCommand()); //Random dog picture API
+        addCommand(new MemeCommand(random)); //Random memes API
+        addCommand(new UICommand());//User Info
+        addCommand(new BanCommand());//Ban Users
+        addCommand(new UnBanCommand()); //UnBan Users
+        addCommand(new SetPrefixCommand());//Change the prefix to desired prefix
+
+        /** Music Commands */
+        addCommand(new JoinCommand()); //Join voice chat command
+        addCommand(new LeaveCommand()); //Leave voice chat command
     }
 
     private void addCommand(ICommand command) {
@@ -54,8 +63,12 @@ public class CommandManager {
     }
 
     void handleCommand(GuildMessageReceivedEvent event) {
+
+        final String prefix =  Constants.PREFIXES.get(event.getGuild().getIdLong());
+
+
         final String[] split = event.getMessage().getContentRaw().replaceFirst(
-                "(?i)" + Pattern.quote(Constants.PREFIX), "").split("\\s+");
+                "(?i)" + Pattern.quote(prefix), "").split("\\s+");
         final String invoke = split[0].toLowerCase();
 
         if (commands.containsKey(invoke)) {

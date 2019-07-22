@@ -40,7 +40,6 @@ public class Main {
             logger.info("Booting");
             new JDABuilder(AccountType.BOT) //Sets account type as bot
                     .setToken(Secrets.TOKEN) // Token stored in Secrets class, logs in to the bot
-                    .setAudioEnabled(false) // <-- Read
                     .setGame(Game.streaming("Join Our Discord!", "https://discord.gg/CXksb8u")) // <- Discord invite link stored as a "Playing..."
                     .addEventListener(listener) //Read listener class and execute code inside
                     .build().awaitReady(); //
