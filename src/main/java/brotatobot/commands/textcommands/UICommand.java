@@ -42,7 +42,7 @@ public class UICommand implements ICommand {
 
         MessageEmbed embed = EmbedUtils.defaultEmbed()
                 .setColor(member.getColor())
-                .setThumbnail(user.getEffectiveAvatarUrl())
+                .setThumbnail(user.getEffectiveAvatarUrl().replaceFirst("gif", "png"))
                 .addField("Username#Discriminator:", String.format("%#s", user), false)
                 .addField("Display Name:", member.getEffectiveName(), false)
                 .addField("User ID + Mention:", String.format("%s (%s)", user.getId(), member.getAsMention()), false)

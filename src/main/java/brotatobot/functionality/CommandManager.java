@@ -3,9 +3,7 @@ package brotatobot.functionality;
 import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.memecommands.DogCommand;
 import brotatobot.commands.memecommands.MemeCommand;
-import brotatobot.commands.moderation.KickCommand;
-import brotatobot.commands.moderation.MuteCommand;
-import brotatobot.commands.moderation.TagFreeCommand;
+import brotatobot.commands.moderation.*;
 import brotatobot.commands.textcommands.CrapsCommand;
 import brotatobot.commands.textcommands.HelpCommand;
 import brotatobot.commands.textcommands.PingCommand;
@@ -37,6 +35,8 @@ public class CommandManager {
         addCommand(new DogCommand());
         addCommand(new MemeCommand(random));
         addCommand(new UICommand());
+        addCommand(new BanCommand());
+        addCommand(new UnBanCommand());
     }
 
     private void addCommand(ICommand command) {
