@@ -9,6 +9,7 @@ import brotatobot.commands.moderation.TagFreeCommand;
 import brotatobot.commands.textcommands.CrapsCommand;
 import brotatobot.commands.textcommands.HelpCommand;
 import brotatobot.commands.textcommands.PingCommand;
+import brotatobot.commands.textcommands.UICommand;
 import brotatobot.objects.ICommand;
 import me.zebbzz.brotatobot.commands.moderation.UnmuteCommand;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
@@ -35,6 +36,7 @@ public class CommandManager {
         addCommand(new UnmuteCommand());
         addCommand(new DogCommand());
         addCommand(new MemeCommand(random));
+        addCommand(new UICommand());
     }
 
     private void addCommand(ICommand command) {
