@@ -59,7 +59,7 @@ public class DogCommand implements ICommand {
     }
     @Override
     public String getHelp() {
-        return "Shows a " + getInvoke() + " pic";
+        return "Shows a dog pic";
     }
 
     @Override

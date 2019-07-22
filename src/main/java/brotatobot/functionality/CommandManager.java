@@ -7,6 +7,7 @@ import brotatobot.commands.moderation.MuteCommand;
 import brotatobot.commands.moderation.TagFreeCommand;
 import brotatobot.commands.textcommands.CrapsCommand;
 import brotatobot.commands.textcommands.HelpCommand;
+import brotatobot.commands.textcommands.JoinEvent;
 import brotatobot.commands.textcommands.PingCommand;
 import brotatobot.objects.ICommand;
 import me.zebbzz.brotatobot.commands.moderation.UnmuteCommand;
@@ -33,6 +34,7 @@ public class CommandManager {
         addCommand(new MuteCommand());
         addCommand(new UnmuteCommand());
         addCommand(new DogCommand());
+        addCommand(new JoinEvent());
     }
 
     private void addCommand(ICommand command) {
