@@ -11,15 +11,17 @@ import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
 import java.util.List;
 
-public class DogCommand implements ICommand {
-
+public class MemeCommand implements ICommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
         Member selfMember = event.getGuild().getSelfMember();
         MessageChannel channel = event.getChannel();
-        WebUtils.ins.getJSONObject("https://dog.ceo/api/breeds/image/random").async((json) -> {
-            String url = json.get("message").asText();
-            MessageEmbed embed = EmbedUtils.embedImage(url).build();
+        WebUtils.ins.getJSONObject("https://meme-api.herokuapp.com/gimme").async((json) -> {
+            String title = json.get("title").asText();
+            String url = json.get("url").asText();
+            String image = json.get("url").asText();
+
+            MessageEmbed embed = EmbedUtils.embedMessageWithTitle(title, url).setImage(image).build();
 
             if (!selfMember.hasPermission(Permission.MESSAGE_EMBED_LINKS)) {
                 channel.sendMessage("Sorry, I do not have permission to use this command!\n" +
@@ -32,11 +34,11 @@ public class DogCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Shows a " + getInvoke() + " pic";
+        return "Shows a random meme";
     }
 
     @Override
     public String getInvoke() {
-        return "dog";
+        return "meme";
     }
 }

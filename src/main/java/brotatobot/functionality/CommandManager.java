@@ -2,6 +2,7 @@ package brotatobot.functionality;
 
 import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.memecommands.DogCommand;
+import brotatobot.commands.memecommands.MemeCommand;
 import brotatobot.commands.moderation.KickCommand;
 import brotatobot.commands.moderation.MuteCommand;
 import brotatobot.commands.moderation.TagFreeCommand;
@@ -33,6 +34,7 @@ public class CommandManager {
         addCommand(new MuteCommand());
         addCommand(new UnmuteCommand());
         addCommand(new DogCommand());
+        addCommand(new MemeCommand());
     }
 
     private void addCommand(ICommand command) {
@@ -57,6 +59,7 @@ public class CommandManager {
         if (commands.containsKey(invoke)) {
             final List<String> args = Arrays.asList(split).subList(1, split.length);
 
+            event.getChannel().sendTyping().queue();
             commands.get(invoke).handle(args, event);
         }
     }
