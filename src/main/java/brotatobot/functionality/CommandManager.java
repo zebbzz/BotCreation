@@ -16,12 +16,10 @@ import org.reflections.Reflections;
 import java.util.*;
 import java.util.regex.Pattern;
 
-
 public class CommandManager {
 
+    private final Reflections reflections = new Reflections("brotatobot.commands");
     private final Map<String, ICommand> commands = new HashMap<>();
-
-    registerCommandsFromReflection(new Reflections("brotatobot.commands"));
 
 
     public CommandManager() {
