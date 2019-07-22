@@ -24,7 +24,7 @@ public class CommandManager {
     private final Map<String, ICommand> commands = new HashMap<>();
 
 
-    public CommandManager() {
+    public CommandManager(Random random) {
         addCommand(new PingCommand());
         addCommand(new KickCommand());
         addCommand(new CrapsCommand());
@@ -34,7 +34,7 @@ public class CommandManager {
         addCommand(new MuteCommand());
         addCommand(new UnmuteCommand());
         addCommand(new DogCommand());
-        addCommand(new MemeCommand());
+        addCommand(new MemeCommand(random));
     }
 
     private void addCommand(ICommand command) {

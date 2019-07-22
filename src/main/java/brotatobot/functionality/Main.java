@@ -24,7 +24,7 @@ public class Main {
 
     private Main() {
 
-        CommandManager commandManager = new CommandManager();
+        CommandManager commandManager = new CommandManager(random);
         Listener listener = new Listener(commandManager);
         Logger logger = LoggerFactory.getLogger(Main.class);
 
