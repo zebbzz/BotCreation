@@ -4,6 +4,7 @@ import brotatobot.commands.admin.SetPrefixCommand;
 import brotatobot.commands.audiocommands.JoinCommand;
 import brotatobot.commands.audiocommands.LeaveCommand;
 import brotatobot.commands.audiocommands.PlayCommand;
+import brotatobot.commands.audiocommands.StopCommand;
 import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.memecommands.DogCommand;
 import brotatobot.commands.memecommands.MemeCommand;
@@ -28,26 +29,33 @@ public class CommandManager {
 
 
     public CommandManager(Random random) {
-        /** Text and Embed Commands */
-        addCommand(new PingCommand()); //Check bots latency
-        addCommand(new KickCommand()); //Kick user from the server
+        /** Fun Commands */
         addCommand(new CrapsCommand()); //Play craps [in production]
+
+        /** Bot help and server Commands */
+        addCommand(new PingCommand()); //Check bots latency
+        addCommand(new SetPrefixCommand());//Change the prefix to desired prefix
         addCommand(new HelpCommand(this));
-        addCommand(new CatCommand()); //Random Cat Images
+        addCommand(new UICommand());//User Info
         addCommand(new TagFreeCommand()); //Tag a help server as free, in production
-        addCommand(new MuteCommand()); //Mute user [adds role if non-existent]
-        addCommand(new UnmuteCommand()); //Unmute user [removes role]
+
+        /** Meme and Image Commands */
+        addCommand(new CatCommand()); //Random Cat Images
         addCommand(new DogCommand()); //Random dog picture API
         addCommand(new MemeCommand(random)); //Random memes API
-        addCommand(new UICommand());//User Info
+
+        /** Moderation Commands */
+        addCommand(new KickCommand()); //Kick user from the server
+        addCommand(new MuteCommand()); //Mute user [adds role if non-existent]
+        addCommand(new UnmuteCommand()); //Unmute user [removes role]
         addCommand(new BanCommand());//Ban Users
         addCommand(new UnBanCommand()); //UnBan Users
-        addCommand(new SetPrefixCommand());//Change the prefix to desired prefix
 
         /** Music Commands */
         addCommand(new JoinCommand()); //Join voice chat command
         addCommand(new LeaveCommand()); //Leave voice chat command
         addCommand(new PlayCommand()); //Plays one song right now
+        addCommand(new StopCommand()); //Stops player and clears queue
     }
 
     private void addCommand(ICommand command) {

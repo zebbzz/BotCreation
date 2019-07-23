@@ -45,15 +45,16 @@ public class Listener extends ListenerAdapter {
             logger.info(String.format("[PRIVATE]<%#s>: %s", author, content));
         }
     }
+
     @Override
-    public void onGuildMemberJoin(GuildMemberJoinEvent e){
+    public void onGuildMemberJoin(GuildMemberJoinEvent e) {
         List<TextChannel> ch = e.getGuild().getTextChannelsByName("general", false);
         TextChannel chToSend = ch.get(0);
         chToSend.sendMessage("Welcome to our server " + e.getMember().getAsMention()).queue();
     }
 
     @Override
-    public void onTextChannelCreate(TextChannelCreateEvent e){
+    public void onTextChannelCreate(TextChannelCreateEvent e) {
         List<Role> mutedrole = e.getGuild().getRolesByName("muted", false);
         e.getChannel().createPermissionOverride(mutedrole.get(0)).setDeny(Permission.MESSAGE_WRITE, Permission.MESSAGE_ADD_REACTION).queue();
     }
@@ -80,6 +81,5 @@ public class Listener extends ListenerAdapter {
     private void shutdown(JDA jda) {
         jda.shutdown();
         System.exit(0);
-
     }
 }
