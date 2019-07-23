@@ -3,6 +3,7 @@ package brotatobot.functionality;
 import brotatobot.commands.admin.SetPrefixCommand;
 import brotatobot.commands.audiocommands.JoinCommand;
 import brotatobot.commands.audiocommands.LeaveCommand;
+import brotatobot.commands.audiocommands.PlayCommand;
 import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.memecommands.DogCommand;
 import brotatobot.commands.memecommands.MemeCommand;
@@ -46,6 +47,7 @@ public class CommandManager {
         /** Music Commands */
         addCommand(new JoinCommand()); //Join voice chat command
         addCommand(new LeaveCommand()); //Leave voice chat command
+        addCommand(new PlayCommand()); //Plays one song right now
     }
 
     private void addCommand(ICommand command) {
