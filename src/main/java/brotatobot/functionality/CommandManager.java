@@ -1,10 +1,7 @@
 package brotatobot.functionality;
 
 import brotatobot.commands.admin.SetPrefixCommand;
-import brotatobot.commands.audiocommands.JoinCommand;
-import brotatobot.commands.audiocommands.LeaveCommand;
-import brotatobot.commands.audiocommands.PlayCommand;
-import brotatobot.commands.audiocommands.StopCommand;
+import brotatobot.commands.audiocommands.*;
 import brotatobot.commands.memecommands.CatCommand;
 import brotatobot.commands.memecommands.DogCommand;
 import brotatobot.commands.memecommands.MemeCommand;
@@ -56,6 +53,7 @@ public class CommandManager {
         addCommand(new LeaveCommand()); //Leave voice chat command
         addCommand(new PlayCommand()); //Plays one song right now
         addCommand(new StopCommand()); //Stops player and clears queue
+        addCommand(new QueueCommand()); //Shows list of current songs in the queue.
     }
 
     private void addCommand(ICommand command) {
