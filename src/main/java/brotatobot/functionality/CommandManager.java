@@ -54,6 +54,7 @@ public class CommandManager {
         addCommand(new PlayCommand()); //Plays one song right now
         addCommand(new StopCommand()); //Stops player and clears queue
         addCommand(new QueueCommand()); //Shows list of current songs in the queue.
+        addCommand(new SkipCommand());
     }
 
     private void addCommand(ICommand command) {
