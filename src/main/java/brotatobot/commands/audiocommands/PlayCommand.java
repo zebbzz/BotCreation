@@ -16,7 +16,7 @@ public class PlayCommand implements ICommand {
         TextChannel channel = event.getChannel();
 
         if (args.isEmpty()) {
-            channel.sendMessage("Please provide some arguements").queue();
+            channel.sendMessage("Please provide some arguments").queue();
 
             return;
         }
